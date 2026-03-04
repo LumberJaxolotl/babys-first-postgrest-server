@@ -8,7 +8,7 @@ https://docs.postgrest.org/en/v14/tutorials/tut0.html
 
 ### Get datebase running
 - Launch Docker Desktop
-- `docker run --name tutorial.conf -p 5432:5432  -e POSTGRES_PASSWORD=notused -d postgres`
+- `docker run --name tutorial -p 5432:5432  -e POSTGRES_PASSWORD=notused -d postgres:12-bullseye`
 
 ### Init database
 - `docker exec -it tutorial psql -U postgres`
@@ -20,7 +20,7 @@ https://docs.postgrest.org/en/v14/tutorials/tut0.html
 
 ## Notes
 
-Couldn't get PostgREST to go into windows path. So just going to keep executable in the repo. 
+Couldn't get PostgREST to go into windows path. So just going to keep executable in the repo. to use the PostgREST executable, postgres drivers need to be installed. [https://www.enterprisedb.com/downloads/postgres-postgresql-downloads](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) 
 
 Use `postgres:12-bullseye` instead of `postgres`. as per [https://stackoverflow.com/questions/76555305/postgres-container-failed-to-start-with-initdb-error-popen-failure-cannot-allo](https://stackoverflow.com/questions/76555305/postgres-container-failed-to-start-with-initdb-error-popen-failure-cannot-allo)
 
