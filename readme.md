@@ -1,8 +1,8 @@
 # Babys First PostgREST Server
 
 ## Getting Running
-`docker compose up`
-
+Run `docker compose up`
+Open ` http://localhost:3000`
 ## Notes
 
 

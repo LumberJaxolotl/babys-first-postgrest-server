@@ -13,7 +13,7 @@ insert into api.todos (task) values
 create role web_anon nologin;
 
 grant usage on schema api to web_anon;
-grant select on api.todos to web_anon;
+GRANT SELECT ON ALL TABLES IN SCHEMA api TO web_anon;
 
 create role authenticator noinherit login password 'mysecretpassword';
 grant web_anon to authenticator;
